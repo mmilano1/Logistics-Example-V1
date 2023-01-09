@@ -1,0 +1,5 @@
+<label>{{ label }}</label>
+<select [(ngModel)]="selectedValue" class="form-select" aria-label="Default select example">
+  <option *ngFor="let option of options" [value]="option.value">{{ option.label }}</option>
+</select>
+<button type="button" class="btn btn-primary" (click)="show()">Show</button>

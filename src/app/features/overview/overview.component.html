@@ -1,0 +1,24 @@
+<div class="card mt-5 w-75 mx-auto">
+
+    <div class="mt-2 mx-auto">
+      <h3 class="card-title text-center">Welcome</h3>
+      <p class="card-text text-center">Here is the general overview of your car fleet.</p>
+    </div>
+    
+    <div class="mt-5 mx-auto">
+  
+      <h5 class="card-title text-center">Pick the information you would like to see.</h5>
+  
+      <div class="mt-5 w-75 mx-auto">
+        <app-custom-picker [label]="'Information:'" [options]="options" (selectedItem)="updateSelected($event)"></app-custom-picker>
+        <app-results-table [measurement]="selectedInformation"></app-results-table>
+      </div>
+
+      <div>
+          
+      </div>
+  
+      
+  
+    </div>
+  </div>
